@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Servicios - Flor de Leche</title>
+    <link rel="stylesheet" href="static/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+
 </head>
 <body>
-    <h1>en los servicio tenemos </h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/quienes-somos">Quiénes Somos</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/noticias">Noticias</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="servicios">
+            <h1>Nuestros Servicios</h1>
+
+            <div class="servicio">
+                <img src="static/images/quesos_artesanales.jpg" alt="Quesos Artesanales">
+                <h2>Producción de Quesos Artesanales</h2>
+                <p>Elaboramos una amplia variedad de quesos artesanales, utilizando técnicas tradicionales y leche fresca de la más alta calidad.</p>
+                <a href="/servicio/quesos-artesanales" class="btn">Leer más</a>
+            </div>
+
+            <div class="servicio">
+                <img src="static/images/leche_fresca.jpg" alt="Leche Fresca">
+                <h2>Suministro de Leche Fresca</h2>
+                <p>Nuestra leche fresca proviene directamente de nuestras granjas locales, garantizando un producto puro y natural.</p>
+                <a href="/servicio/leche-fresca" class="btn">Leer más</a>
+            </div>
+
+            <div class="servicio">
+                <img src="static/images/productos_fermentados.jpg" alt="Productos Fermentados">
+                <h2>Productos Fermentados</h2>
+                <p>Ofrecemos una selección de productos fermentados como yogurt y kéfir, ricos en probióticos y beneficiosos para la salud.</p>
+                <a href="/servicio/productos-fermentados" class="btn">Leer más</a>
+            </div>
+
+            <div class="servicio">
+                <img src="static/images/talleres_gastronomicos.jpg" alt="Talleres Gastronómicos">
+                <h2>Talleres y Experiencias Gastronómicas</h2>
+                <p>Organizamos talleres donde nuestros clientes pueden aprender a hacer sus propios quesos y otros productos lácteos.</p>
+                <a href="/servicio/talleres-gastronomicos" class="btn">Leer más</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Flor de Leche. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,262 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilo del contenido principal */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Estilo de las secciones */
+.servicios, .noticias, .contacto {
+    margin-bottom: 30px;
+}
+
+.servicio, .noticia {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.servicio img, .noticia img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.servicio h2, .noticia h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.servicio p, .noticia p {
+    margin: 0;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Estilo del formulario */
+form {
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilo del mapa */
+.mapa iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+    margin-top: 20px;
+}
+
+/* Reset de estilos básicos para asegurar uniformidad */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Color de fondo suave */
+    color: #333; /* Color de texto */
+}
+
+/* Estilo para el encabezado y navegación */
+header {
+    background-color: #007bff; /* Color de fondo del encabezado */
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none; /* Sin viñetas en la lista */
+    display: flex; /* Disposición horizontal */
+    justify-content: center; /* Centrando los elementos */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado entre enlaces */
+}
+
+nav ul li a {
+    color: white; /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+/* Estilos del main y la sección de contacto */
+main {
+    padding: 20px; /* Espaciado en el contenedor principal */
+    max-width: 800px; /* Ancho máximo de contenido */
+    margin: 0 auto; /* Centrar en la página */
+}
+
+.contacto {
+    background-color: #ffffff; /* Fondo blanco para la sección de contacto */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaciado interno */
+}
+
+h1 {
+    color: #007bff; /* Color azul para el título principal */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+form {
+    display: flex; /* Disposición flexible */
+    flex-direction: column; /* Elementos en columna */
+}
+
+label {
+    margin-bottom: 5px; /* Espacio debajo de las etiquetas */
+    font-weight: bold; /* Negrita en etiquetas */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espacio entre campos */
+    border: 1px solid #ced4da; /* Bordes suaves */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+button {
+    padding: 10px; /* Espaciado interno del botón */
+    background-color: #28a745; /* Color de fondo del botón */
+    color: white; /* Color de texto en el botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-weight: bold; /* Negrita en el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+button:hover {
+    background-color: #218838; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilo para la sección de mapa */
+.mapa {
+    margin-top: 20px; /* Espacio superior antes del mapa */
+    text-align: center; /* Centrar el mapa */
+}
+
+footer {
+    text-align: center; /* Centrar el texto del pie de página */
+    padding: 20px 0; /* Espaciado en el pie */
+    background-color: #007bff; /* Color de fondo del pie */
+    color: white; /* Color del texto del pie */
+    position: relative; /* Para el posicionamiento */
+    bottom: 0; /* Mantener en la parte inferior */
+    width: 100%; /* Ancho total */
+}
+

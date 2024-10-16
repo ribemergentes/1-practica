@@ -4,10 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+ 
 </head>
 <body>
-
-    inicio de la pagina web
+    <div class="container">
+        <h1 class="text-center">Bienvenido a Flor de Leche</h1>
+        <p class="lead">La mejor calidad en productos lácteos artesanales.</p>
+    </div>
     
-</body>
-</html>
+
+   
+
+        <header class="text-center">
+            <img src="{{ url_for('static', filename='img/logo/logo.png') }}" alt="Logo de Flor de Leche" style="max-width: 200px;">
+            <h1>Flor de Leche</h1>
+            <h2>Somos una empresa eco²social</h2>
+        </header>
+    
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('inicio') }}">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('servicios') }}">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('quienessomos') }}">Quiénes Somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('noticias') }}">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('contactos') }}">Contactos</a></li>
+            </ul>
+        </nav>
+    
+        <div class="container mt-4">
+            <h3>Nuestra Filosofía</h3>
+            <p>Practicamos la sostenibilidad desde tres pilares fundamentales:</p>
+            
+            <h4>Ecológico</h4>
+            <p>Somos parte de un ecosistema, lo que nos hace interdependientes. Nuestra producción busca ser respetuosa con el entorno, responsabilizándonos de los efluentes y desechos que generamos para promover la agroecología y el consumo consciente.</p>
+    
+            <h4>Económico</h4>
+            <p>Buscamos producir y compartir entre todos y todas de manera justa las ganancias económicas para generar condiciones de sostenibilidad, por esto nos inspiramos y promovemos sistemas que siembren valores, equilibrio y respeto.</p>
+    
+            <h4>Social</h4>
+            <p>Nos construimos a partir de la relación de reciprocidad con diferentes actores. A través de articulaciones sociales creamos y somos parte de nuevas oportunidades de desarrollo y aprendizaje, sembrando un impacto social positivo.</p>
+    
+            <h3>Nuestros Proyectos</h3>
+            <ul>
+                <li><strong>Quesería:</strong> Elaboramos quesos y derivados lácteos artesanales, naturales y gourmet. <a href="#">Ir</a></li>
+                <li><strong>Chalet:</strong> Restaurante de campo, rústico natural y ecológico. Menú Gourmet hecho en base a nuestros quesos y productos. <a href="#">Ir</a></li>
+                <li><strong>Granja Escuela:</strong> Regeneramos el agua utilizada de la quesería y gestionamos los desechos sólidos para nutrir nuevamente la tierra. Compartimos nuestra experiencia con otros a través de interacciones educativas. <a href="#">Ir</a></li>
+            </ul>
+    
+            <h3>Contacto</h3>
+            <p><strong>Dirección:</strong> Calle 4 de Abril No 8, Zona Sojsaña, Achocalla, La Paz-Bolivia</p>
+            <p><strong>Teléfonos:</strong> 2890011 – 2890155 – 721 66674</p>
+            <p><strong>Email:</strong> info@flordeleche.com</p>
+    
+            <h4>Atención:</h4>
+            <p><strong>Planta:</strong> Lun a Vie: 08:00 – 17:00 hrs. | Sáb: 08:00 – 12:30 hrs.</p>
+            <p><strong>Chalet:</strong> Sáb y Dom: 12:00 – 16:00 hrs. (Previa Reserva)</p>
+    
+            <h3>Síguenos</h3>
+            <div class="social-buttons">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+    
+            <div class="footer mt-4">
+                <p>&copy; 2021 Flor de Leche. Todos los derechos reservados.</p>
+                <p>Diseño y desarrollo por Bolivia Webs</p>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ORL0qR9IKmKZc2mNLg0pI6r+1Zp8F8k9rCfWcU3n+YpW3RvC3IO74SUY2pZW5Itj" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    
+    
